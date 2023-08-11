@@ -11,7 +11,7 @@ loginForm.addEventListener('submit', function (event) {
   const validPassword = 'hello';
 
   if (id === validId && password === validPassword) {
-    window.location.href = 'success.html';
+    window.location.href = 'https://github.com/Pankaj-Bind';
   } else {
     alert('Invalid ID or password. Please try again.');
   }
