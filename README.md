@@ -1,4 +1,4 @@
-# code-chaos - College Coding Club Website
+# CodeChaos - College Coding Club
 
 Welcome to the code-chaos repository! code-chaos is the official coding club of [Your College Name], aimed at fostering a community of passionate coders and learners. This website serves as a hub for sharing coding resources, hosting coding events, and connecting with fellow coding enthusiasts.
 
