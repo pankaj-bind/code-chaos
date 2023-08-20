@@ -1,12 +1,9 @@
 body {
+  background-color: #161a25;
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: #f0f0f0;
-}
-
-.image-container {
-  text-align: center;
+  height: 100vh;
 }

@@ -1,42 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-  }
-  
-  .login-container {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  label, input {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #161a25;
+        height: 100vh;
+      }
+      body,
+      input {
+        font-family: "Poppins", sans-serif;
+      }
+      .main-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      .signin-signup {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 75%;
+        width: 50%;
+        transition: 1s 0.7s ease-in-out;
+        display: grid;
+        grid-template-columns: 1fr;
+        z-index: 5;
+      }
+
+      form {
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0rem 5rem;
+        transition: all 0.2s 0.7s;
+        overflow: hidden;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.1
+        ); /* Added background color to form for visibility */
+        border-radius: 10px; /* Added border-radius to form for a rounded appearance */
+      }
+
+      form.sign-in-form {
+        z-index: 2;
+      }
+
+      .title {
+        font-size: 2.2rem;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+
+      .input-field {
+        max-width: 380px;
+        width: 130%;
+        background-color: #f0f0f0;
+        margin: 10px 0;
+        height: 55px;
+        border-radius: 55px;
+        display: grid;
+        grid-template-columns: 15% 85%;
+        padding: 0 0.4rem;
+        position: relative;
+      }
+
+      .input-field i {
+        text-align: center;
+        line-height: 55px;
+        color: #2a6fd8;
+        transition: 0.5s;
+        font-size: 1rem;
+      
+      }
+
+      .input-field input {
+        background: none;
+        outline: none;
+        border: none;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 1rem;
+        width: 290px;
+        color: #333;
+      }
+
+      .input-field input::placeholder {
+        color: #aaa;
+        font-weight: 500;
+      }
+
+      .btn {
+        width: 150px;
+        background-color: #5995fd;
+        border: none;
+        outline: none;
+        height: 49px;
+        border-radius: 49px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 10px 0;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      .btn:hover {
+        background-color: #4d84e2;
+      }
+      a {
+        color: #5995fd; /* Default link color */
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      a:hover {
+        color: #4d84e2; /* Link color on hover */
+      }
+
+      a:visited {
+        color: #5995fd; /* Link color for visited links */
+      }

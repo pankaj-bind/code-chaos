@@ -1,13 +1,17 @@
-document.getElementById("login-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-  
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-  
-    if ((username === "pankaj" && password === "bind345") || (username === "neeraj" && password === "bind342")) {
-      window.location.href = "redirect.html"; // Redirect to another page on successful login
+
+  document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    // Get the entered username and password
+    const username = document.querySelector('#loginForm input[type="text"]').value;
+    const password = document.querySelector('#loginForm input[type="password"]').value;
+
+    // Check if the entered username and password match the desired values
+    if (username === 'pankaj' && password === 'bind') {
+      // If they match, redirect to google.com
+      window.location.href = '../html/home.html';
     } else {
-      alert("Invalid username or password");
+      // If they don't match, display an error message (you can customize this part)
+      alert('Invalid username or password');
     }
   });
-  
