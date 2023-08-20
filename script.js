@@ -1,18 +1,11 @@
-const loginForm = document.getElementById('loginForm');
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the image element
+  var image = document.querySelector(".image-container img");
 
-loginForm.addEventListener('submit', function (event) {
-  event.preventDefault();
-
-  const id = document.getElementById('id').value;
-  const password = document.getElementById('password').value;
-
-  // Replace these values with your actual ID and password
-  const validId = '9506608157';
-  const validPassword = 'hello';
-
-  if (id === validId && password === validPassword) {
-    window.location.href = 'https://github.com/Pankaj-Bind';
-  } else {
-    alert('Invalid ID or password. Please try again.');
-  }
+  // Display the image for 3 seconds
+  setTimeout(function () {
+    // Redirect to another page after 3 seconds
+    window.location.href = "./src/html/login.html";
+  }, 3000); // 3000 milliseconds = 3 seconds
 });
