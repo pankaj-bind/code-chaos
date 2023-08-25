@@ -3,27 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login to CodChaos</title>
+  <title>Login to Code Chaos</title>
   <link rel="stylesheet" href="../css/login.css">
+  <link rel="shortcut icon" href="../images/CODECHAOS_LOGO-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
   <div class="main-container">
     <img src="../images/CODECHAOS_LOGO-removebg-preview.png" alt="" class="logo"><br>
-    <font class="sign-into-codechaos">Sign in to CodeChaos</font>
+    <font class="sign-into-codechaos">Sign in to Code Chaos</font>
     <div class="form-container">
-      <form action="#">
+      <form action="#" id="login-form">
         <br>
         <font for="username" class="lable">Username or email address</font><br><br>
-        <input type="text"><br><br>
+        <input type="text" id="username"><br><br>
         <font for="password" class="lable">Password</font><a href="#" class="forget">Forgot password?</a><br><br>
-        <input type="password"><br><br>
-        <input type="submit" value="Sign in" class="submit-button"><br><br>
+        <input type="password" id="password"><br><br>
+        <button type="submit" class="submit-button">Login</button><br><br>
       </form>
     </div>
     <div class="create-account">
-      <font class="create-account-text">Don't have an account? <a href="#" class="create-account-link">Create account</a></font>
+      <font class="lable">New to Code Chaos? <a href="#" class="create-account-link">Create account</a></font>
     </div>
   </div>
-  
+  <script src="../javascript/login.js"></script>
 </body>
 </html>

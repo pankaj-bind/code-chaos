@@ -1,17 +1,19 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const loginForm = document.getElementById("login-form");
 
-  document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission behavior
+  loginForm.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-    // Get the entered username and password
-    const username = document.querySelector('#loginForm input[type="text"]').value;
-    const password = document.querySelector('#loginForm input[type="password"]').value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
-    // Check if the entered username and password match the desired values
-    if (username === 'pankaj' && password === 'bind') {
-      // If they match, redirect to google.com
-      window.location.href = '../html/home.html';
+    // Check if the username and password match
+    if (username === "pankaj" && password === "bind") {
+      // Redirect to another webpage
+      window.location.href = "../html/home.html"; // Replace with your desired URL
     } else {
-      // If they don't match, display an error message (you can customize this part)
-      alert('Invalid username or password');
+      // Show a prompt message
+      alert("Incorrect username or password. Please try again.");
     }
   });
+});

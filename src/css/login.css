@@ -17,6 +17,7 @@ body{
 }
 .logo{
   height: 150px;
+  margin-top: 30px;
 }
 .sign-into-codechaos{
 font-size: 30px;
@@ -24,7 +25,7 @@ font-weight: 700;
 color: rgb(171, 191, 209);
 }
 .form-container, .create-account{
-  border: 1px solid rgb(171, 191, 209);
+  border: 1px solid rgb(92, 99, 105);
   border-radius: 5px;
   margin-top: 20px;
   color: rgb(171, 191, 209);
@@ -38,6 +39,10 @@ input{
   border-radius: 4px;
   border: 1px solid rgb(171, 191, 209);
 }
+input:focus{
+  outline: none;
+  border: 2px solid rgb(21, 116, 199);
+}
 .lable{
   margin-left: 23px;
   font-size: 15px;
@@ -46,19 +51,46 @@ input{
 .forget{
   padding-left: 170px;
   text-decoration: none;
-  color: rgb(72, 151, 219);
+  color: rgb(21, 116, 199);
 }
 .forget:visited{
-  color: rgb(171, 191, 209);
+  color: rgb(21, 116, 199);
 }
 .forget:active{
-  color: rgb(171, 191, 209);
+  color: rgb(21, 116, 199);
+}
+
+.create-account{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-account-link{
+  text-decoration: none;
+  color: rgb(21, 116, 199);
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.create-account-link:visited{
+  color: rgb(21, 116, 199);
+}
+.create-account-link:active{
+  color: rgb(21, 116, 199);
 }
 .submit-button{
-  margin-top: 10px;
-  background-color: #5dc238;
-  color: aliceblue;
-  font-weight: 700;
-  font-size: 15px;
   width: 360px;
+  height: 40px;
+  margin-left: 23px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: 1px solid rgb(48, 21, 199);
+  background-color: rgb(21, 116, 199);
+  color: rgb(171, 191, 209);
+  font-size: 15px;
+  font-weight: 700;
 }
